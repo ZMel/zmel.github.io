@@ -1,0 +1,30 @@
+Link:	zmel.github.io
+
+Parody:
+=======
+
+Parody is a 3D first person shooter with minor puzzle elements. 
+
+Thematically, each level will attempt to emulate a different game genre, and will subtly parody certain clichés common to each of these genres.  Supporting both single player and multiplayer modes, single-player consists of 3 distinct stages each themed after a different game genre, while multiplayer mode is deathmatch where 2 players face off against each other from separate computers.
+
+In the game you play as a game testing Robot trying to fix 3 games from a terrible virus
+The virus has deployed bugs in each game, its your job to find and destroy these bugs. But be carful, doing so will fix the games AI, you will then have to destroy or avoid them in order to move on to the next stage
+
+The games control style features a typical First Person Control system
+
+Developers/Artists/Animators:
+=============================
+
+Zac Melnick
+Adam Sundstrom
+Saleem Manjoo
+
+Sound:
+======
+
+Ben van Wyk
+
+Supervisor:
+===========
+
+Geoff Nitschke
