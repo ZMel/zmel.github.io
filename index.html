@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Poseidon</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom Google Web Font -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <!-- Add custom CSS here -->
+    <link href="css/clean-blog.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-mine navbar-fixed-top" role="navigation">
+        <div class="container navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" style="color: #FFFFFF" href="#">Poseidon</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#intro">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#allocation">Allocation</a>
+                    </li>
+                    <li>
+                        <a href="#simulation">Simulation</a>
+                    </li>
+                    <li>
+                        <a href="#related">Related Work</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div class="intro-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Poseidon</h1>
+                        <h3>An Agent Based Simulation</h3>
+                        <hr class="intro-divider">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.intro-header -->
+    <div id="intro" class="content-section-d">
+        <div class="container">
+            <div class="row">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Introduction</h2>
+                <p class="lead">Poseidon is an Agent Based Simulation used to explore the evolution of cooperation in the natural world
+                    <br>This is a field of great interest for biologists and engineers alike.
+                    <br>
+                    <br>How can Darwin's <em>survival of the fittest</em> account for individuals putting the groups survival over their own.
+                    <br>How and why have these individuals learned to work cooperatively?
+                    <br>
+                    <br>How evolution may have evolved is also of interest to several sub-fields of computer science and engineering. If you know how or why agents learn to cooperate in nature, you may have a better chance of forcing cooperative behaviour to evolve in simulated or robotic agents, which has implications for collaborative robotic control tasks.</p>
+                <p class="lead">
+                    The goal of this research is to investigate 3 different aspects of groups and determine if and how they may have played a part in the evolution of cooperation and superorganisms in the natural world.
+                </p>
+            </div>
+            <!--div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8"><img class="img-responsive" src="img/darwin.jpg" alt=""></div>
+                <div class="col-md-2"></div>
+            </div-->
+        </div>
+    </div>
+    <div class="content-section-c">
+        <div class="container">
+            <div class="row">
+                <div class="clearfix"></div>
+                <h2>Eusocial creatures</h2>
+                <p class="lead">
+                    Eusocial creatures, such as ants and termites, exhibit cooperation on an unprecedented scale. Each individual comprising these superorganisms behaves not for their own benefit, but for the benefit of the collective [Kelly 1995]. They are some of the most successful organisms in the world.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="content-section-c">
+
+            <div class="container">
+
+                <div class="row">
+                        <div class="clearfix"></div>
+                        <h2>Agent Based System</h2>
+                        <p class="lead">
+                            Agent Based Systems are a subset of Artificial Intelligence (AI) [Langton 1986]. ABS are made up of intelligent agents [Wooldridge 1997] which are autonomous systems able to observe and act within an environment.
+                        </p>
+
+                </div>
+
+            </div>
+    <!-- </div> -->
+    <div id="about">
+        <div class="content-section-b">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6">
+                        <h2>Cooperative Behaviour</h2>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <p class="lead">
+                            How eusociality (and cooperation in general) may have evolved is a question of great interest and importance in the field of biology. Several theories, such as Kin Selection [Hamilton 1963], Reciprocal Altruism [Trivers 1971], and Tug-of-War Theory [Reeve and H¨olldobler 2007], attempt to understand the evolution of such behaviour.
+                            <br>
+                            <br>This research will focus primarily on Tug-of-War Theory: specifically, the model proposed by Reeve and H¨olldobler [2007].
+                            <br>
+                            <br>Their model suggests that cooperative behaviour emerges as a bi-product of a nested tug-of-war. Agents within the same group compete for resources gathered by their group, and groups compete with each other for the limited resources available in the environment.
+                        </p>
+                        <img class="img-responsive" src="img/group.png" alt="">
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                        <hr class="section-heading-spacer3">
+                        <div class="clearfix"></div>
+                        <p class="lead">
+                            All agents in this model have the capacity for selfishness. They may choose to not expend any energy foraging for resources, knowing that they will get a share of what is collected by other agents in their group. This situation describes intragroup competition.
+                            <br>
+                            <br>Conversely, an agent may choose to expend its own limited energy searching for resources that will be shared amongst its group. This situation implicitly defines intragroup cooperation [Reeve and H¨olldobler 2007]. In the real world, superorganisms exhibit the following key organizational trends [Wilson and H¨olldobler 2005].
+                            <br>
+                            <br>(1) Cooperation is more likely to occur between agents with similar genetics.
+                            <br>
+                            <br>(2) Large colony sizes lead to higher levels of cooperation.
+                            <br>
+                            <br>(3) As colony size increases, brood output decreases.
+                            <br>
+                            <br>(4) Resource patchiness and inter-group competition are strongly associated with cooperation.
+                            <br>
+                            <br>By changing group size, levels of inter-group competition and genetic relatedness Reeve and H¨olldobler [2007] found that the above correlations emerged elegantly from their model.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-section-c">
+            <div class="container">
+                <div class="row">
+                    <div class="clearfix"></div>
+                    <h2>Agent Based Systems</h2>
+                    <p class="lead">
+                        Agent Based Systems are a subset of Artificial Intelligence (AI) [Langton 1986]. ABS are made up of intelligent agents [Wooldridge 1997] which are autonomous systems able to observe and act within an environment.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="content-section-b">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-sm-6">
+                        <h2>Simulation Design</h2>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <p class="lead">The above is evidence that the tug-of-war theory is a strong candidate for explaining the evolution of cooperation. The problem is its abstract nature.
+                            <br>
+                            <br> Many simplifications and generalizations are made in order to gain insight into the evolutionary process, but the complex behaviours of individuals and their interactions are not taken into account.
+                            <br>
+                            <br> Agent Based Systems can add to this area by being used to create and test meaningful models which are still based on the principle of observation of natural systems. Agent-based systems have proven invaluable as complementary tools in many different problem domains and fields.
+                            <br>
+                            <br> By incorporating complex features such as behavioural adaptation via evolution, an agent-based model is able to complement theoretical models by simulating behaviours that cannot otherwise be captured. Such a simulation would facilitate the evaluation of theories regarding the evolution of cooperation.</p>
+                    </div>
+                    <div class="col-lg-5 col-sm-6">
+                        <img class="img-responsive image-spacer" src="img/antBrain.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-section-c">
+            <div class="container">
+                <div class="row">
+                    <div class="clearfix"></div>
+                    <h2>Controller Design</h2>
+                    <p class="lead">
+                        By making use of a combination of both AI and Machine Learning techniques, it is possible to create agent controllers. The controller is responsible for actions of the agents, and must perform well for a given task. Although it is possible for these controllers to be designed by hand, there is no guarantee that they will lead to performant behaviour in agents.
+                        <br>
+                        <br>Neuro-Evolution in particular has been suggested as effective methods to create agent controllers in ABS [Baldassarre et al. 2003][Nolfi and Floreano 2000].
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="content-section-b">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-sm-6">
+                        <h2>Neuro Evolution</h2>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <p class="lead">
+                            Artificial Neural Networks (ANNs) (Palm, 1986) form an integral part of the NE process. ANNs are based on the biology of the brain, where the interconnected nodes making up the ANN can be compared to the interconnected neurons of the brain (Mitchell, 1997). The links between the nodes in the ANN can be thought of as synapses.
+                            <br>
+                            <br> Neuro-Evolution (NE) [Miikkulainen 2010] is the application of Evolutionary Algorithms (EAs) to Artificial Neural Networks (ANNs). The EA searches for specific network configurations within a set of candidate solutions. NE is used to modify multiple aspects of ANNs, such as weights and topologies within the ANN, which gradually allows an agent controlled by the ANN to learn.
+                    </div>
+                    <div class="col-lg-5 col-sm-6">
+                        <img class="img-responsive image-spacer" src="img/antBrain.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-section-c">
+            <div class="container">
+                <div class="row">
+                    <div class="clearfix"></div>
+                    <h2>Experimentation</h2>
+                    <p class="lead">
+                        The core problem that we need to solve is how to adequately capture the tug-of-war model in our agent-based implementation. The same experiments that were carried out mathematically by Reeve and Holldobler must be able to be carried out empirically in our simulation.
+                        <br>
+                        <br> These experiments will be split into 3 distinct sections
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="content-section-b">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-sm-6">
+                        <h2>Genetic Relatedness</h2>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <p class="lead">
+                            Artificial Neural Networks (ANNs) (Palm, 1986) form an integral part of the NE process. ANNs are based on the biology of the brain, where the interconnected nodes making up the ANN can be compared to the interconnected neurons of the brain (Mitchell, 1997). The links between the nodes in the ANN can be thought of as synapses.
+                            <br>
+                            <br> Neuro-Evolution (NE) [Miikkulainen 2010] is the application of Evolutionary Algorithms (EAs) to Artificial Neural Networks (ANNs). The EA searches for specific network configurations within a set of candidate solutions. NE is used to modify multiple aspects of ANNs, such as weights and topologies within the ANN, which gradually allows an agent controlled by the ANN to learn.
+                    </div>
+                    <div class="col-lg-5 col-sm-6">
+                        <img class="img-responsive image-spacer" src="img/antBrain.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-section-a">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Group Size</h2>
+                        <p class="lead">If you manage to make your way through all the enemies you will come face to face with the virus in an epic boss battle
+                            <br>
+                            <br>In this last stage you will have to attack the boss while his shields are down, when they are up he will send the infected game AI to attack you.</p>
+                    </div>
+                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                        <img class="img-responsive" src="img/boss.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-section-b">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-sm-6">
+                        <h2>Resource Density</h2>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <p class="lead">
+                            Artificial Neural Networks (ANNs) (Palm, 1986) form an integral part of the NE process. ANNs are based on the biology of the brain, where the interconnected nodes making up the ANN can be compared to the interconnected neurons of the brain (Mitchell, 1997). The links between the nodes in the ANN can be thought of as synapses.
+                            <br>
+                            <br> Neuro-Evolution (NE) [Miikkulainen 2010] is the application of Evolutionary Algorithms (EAs) to Artificial Neural Networks (ANNs). The EA searches for specific network configurations within a set of candidate solutions. NE is used to modify multiple aspects of ANNs, such as weights and topologies within the ANN, which gradually allows an agent controlled by the ANN to learn.
+                    </div>
+                    <div class="col-lg-5 col-sm-6">
+                        <img class="img-responsive image-spacer" src="img/antBrain.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="contact" class="banner">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="section-heading">Contact</h2>
+                        <div class="col-md-4">
+                            <h3 class="section-heading">Zac Melnick</h3>
+                            <p class="lead">MLNZAC001
+                                <br>mlnzac001@myuct.ac.za
+                                <br>072 365 0880</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="section-heading">Jacob Clarkson</h3>
+                            <p class="lead">CLRJAC004
+                                <br>jacobhclarkson@gmail.com
+                                <br>078 348 4450</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="section-heading">Paul Wanjohi</h3>
+                            <p class="lead">WNJPAU001
+                                <br>paul.mwanjohi@gmail.com
+                                <br>072 460 7568</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.banner -->
+            <!-- Footer -->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                            <p class="copyright text-muted">Copyright &copy; Zac Melnick; Jacob Clarkson; Paul Wanjohi 2015
+                            </p>
+                            <p class="copyright text-muted">Supervisor: Dr Geoff Nitschke</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- JavaScript -->
+            <script src="js/jquery-1.10.2.js"></script>
+            <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
