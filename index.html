@@ -34,17 +34,17 @@
                     <li>
                         <a href="#intro">Introduction</a>
                     </li>
-                    <li>
-                        <a href="#about">About</a>
+                       <li>
+                        <a href="#cooperation">Cooperation</a>
                     </li>
                     <li>
-                        <a href="#allocation">Allocation</a>
+                        <a href="#agentdesign">Agent Design</a>
                     </li>
                     <li>
-                        <a href="#simulation">Simulation</a>
+                        <a href="#experiments">Experiments</a>
                     </li>
                     <li>
-                        <a href="#related">Related Work</a>
+                        <a href="#references">References</a>
                     </li>
                     <li>
                         <a href="#contact">Contact</a>
@@ -93,7 +93,7 @@
             </div-->
         </div>
     </div>
-    <div class="content-section-c">
+    <div id="cooperation" class="content-section-c">
         <div class="container">
             <div class="row">
                 <div class="clearfix"></div>
@@ -158,7 +158,7 @@
                 </div>
             </div>
         </div>
-        <div class="content-section-c">
+        <div id="agentdesign" class="content-section-c">
             <div class="container">
                 <div class="row">
                     <div class="clearfix"></div>
@@ -173,7 +173,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 col-sm-6">
-                        <h2>Simulation Design</h2>
+                        <h2>Agents</h2>
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
                         <p class="lead">The above is evidence that the tug-of-war theory is a strong candidate for explaining the evolution of cooperation. The problem is its abstract nature.
@@ -221,7 +221,7 @@
                 </div>
             </div>
         </div>
-        <div class="content-section-c">
+        <div id="experiments" class="content-section-c">
             <div class="container">
                 <div class="row">
                     <div class="clearfix"></div>
@@ -242,12 +242,14 @@
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
                         <p class="lead">
-                            Artificial Neural Networks (ANNs) (Palm, 1986) form an integral part of the NE process. ANNs are based on the biology of the brain, where the interconnected nodes making up the ANN can be compared to the interconnected neurons of the brain (Mitchell, 1997). The links between the nodes in the ANN can be thought of as synapses.
+                            It is mentioned by Reeve and H¨olldobler [2007] that the highest levels of altruism are found amongst closely related groups. Their game theoretic model predicted that relatedness is found before the occurrence of intra-group cooperation.
                             <br>
-                            <br> Neuro-Evolution (NE) [Miikkulainen 2010] is the application of Evolutionary Algorithms (EAs) to Artificial Neural Networks (ANNs). The EA searches for specific network configurations within a set of candidate solutions. NE is used to modify multiple aspects of ANNs, such as weights and topologies within the ANN, which gradually allows an agent controlled by the ANN to learn.
+                            <br> The purpose of this section of the experimentation to test if an increase in genetic relatedness between agents causes an increase in between agent cooperation and the rise of super-organisms
+                            <br>
+                            <br> The simulation will be initialized with a single population of agents, where multiple new species of agents will be dynmically created based on agent recombination and the genetic relatedness level between these agents.
                     </div>
                     <div class="col-lg-5 col-sm-6">
-                        <img class="img-responsive image-spacer" src="img/antBrain.png" alt="">
+                        <img class="img-responsive image-spacer" src="img/dna.png" alt="">
                     </div>
                 </div>
             </div>
@@ -255,16 +257,20 @@
         <div class="content-section-a">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <div class="col-lg-5 col-sm-6">
+                        <img class="img-responsive" src="img/colony.jpg" alt="">
+                    </div>
+                    <div class="col-lg-7 col-sm-6">
+                        <h2>Group Size</h2>
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
-                        <h2 class="section-heading">Group Size</h2>
-                        <p class="lead">If you manage to make your way through all the enemies you will come face to face with the virus in an epic boss battle
+                        <p class="lead">
+                            By changing group size, Reeve and H¨olldobler [2007] found that the above correlations emerged elegantly from their model.
                             <br>
-                            <br>In this last stage you will have to attack the boss while his shields are down, when they are up he will send the infected game AI to attack you.</p>
-                    </div>
-                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                        <img class="img-responsive" src="img/boss.png" alt="">
+                            <br>To measure the effect of group size on evolution, the experimenter will be able to stipulate the global starting population, this will consist of two different agent populations of a default starting size and the reproductive capacity of agents (how fast a group is able to grow in size).
+                            <br>
+                            <br>The size of the group will therefore be dynamically changed during the simulation run.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -277,13 +283,53 @@
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
                         <p class="lead">
-                            Artificial Neural Networks (ANNs) (Palm, 1986) form an integral part of the NE process. ANNs are based on the biology of the brain, where the interconnected nodes making up the ANN can be compared to the interconnected neurons of the brain (Mitchell, 1997). The links between the nodes in the ANN can be thought of as synapses.
+                            By changing the levels of inter-group competition, Reeve and H¨olldobler [2007] found that the above correlations emerged elegantly from their model. To simulate this situation the levels of resource density will be altered during run which will bring a rise in inter-group cooperation among the agents.
                             <br>
-                            <br> Neuro-Evolution (NE) [Miikkulainen 2010] is the application of Evolutionary Algorithms (EAs) to Artificial Neural Networks (ANNs). The EA searches for specific network configurations within a set of candidate solutions. NE is used to modify multiple aspects of ANNs, such as weights and topologies within the ANN, which gradually allows an agent controlled by the ANN to learn.
+                            <br>Inter-group competition will be facilitated by environmental factors such as resource availability and patchiness. One small resource patch in the world will lead to high competition, as all groups will have to fight for the limited resources. The more intragroup cooperation occurs, the higher the pool of collected resources for a group will be at the end of each iteration.
                     </div>
                     <div class="col-lg-5 col-sm-6">
-                        <img class="img-responsive image-spacer" src="img/antBrain.png" alt="">
+                        <img class="img-responsive image-spacer" src="img/food.png" alt="">
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-section-c">
+            <div class="container">
+                <div class="row">
+                    <div class="clearfix"></div>
+                    <h2>Results</h2>
+                    <p class="lead">
+                        By tracking the energy amount of resources held by a group at the end of each iteration, we will be able to measure the amount of cooperation that occurred.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="references" class="content-section-d">
+            <div class="container">
+                <div class="row">
+                    <div class="clearfix"></div>
+                    <h2>References</h2>
+                    <p class="lead2">
+                        H Kern Reeve and Bert H¨olldobler. 2007. The emergence of a superorganism through intergroup competition. Proceedings of the National Academy of Sciences 104, 23 (2007), 9736–9740.
+                        <br>
+                        <br>William D Hamilton. 1963. The evolution of altruistic behavior. American naturalist (1963), 354–356.
+                        <br>
+                        <br>Chia-Feng Juang, Jiann-Yow Lin, and Chin-Teng Lin. 2000. Genetic reinforcement learning through symbiotic
+                        <br>
+                        <br>Robert L. Trivers. 1971. The Evolution of Reciprocal Altruism. The Quarterly Review of Biology 46, 1 (1971), pp. 35–57. http://www.jstor.org/stable/2822435
+                        <br>
+                        <br>Edward O Wilson and Bert H¨olldobler. 2005. Eusociality: origin and consequences. Proceedings of the National Academy of Sciences of the United States of America 102, 38 (2005), 13367–13371.
+                        <br>
+                        <br>Christopher G. Langton. 1986. Studying artificial life with cellular automata. Physica D: Nonlinear Phenomena 22, 1 (1986), 120–149.
+                        <br>
+                        <br>Michael Wooldridge. 1997. Agent-based software engineering. IEE Proceedings-software 144, 1 (1997), 26– 37.
+                        <br>
+                        <br>Michael Wooldridge and Nicholas R. Jennings. 1995. Intelligent agents: Theory and practice. The knowledge engineering review 10, 02 (1995), 115–152.
+                        <br>
+                        <br>Risto Miikkulainen. 2010. Neuroevolution. Springer, 716–720.
+                        <br>
+                        <br>Gianluca Baldassarre, Stefano Nolfi, and Domenico Parisi. 2003. Evolving mobile robots able to display collective behaviors. Artificial Life 9, 3 (2003), 255–267.
+                    </p>
                 </div>
             </div>
         </div>
@@ -296,19 +342,22 @@
                             <h3 class="section-heading">Zac Melnick</h3>
                             <p class="lead">MLNZAC001
                                 <br>mlnzac001@myuct.ac.za
-                                <br>072 365 0880</p>
+                                <br>072 365 0880
+                                <br>Genetic Relatedness</p>
                         </div>
                         <div class="col-md-4">
                             <h3 class="section-heading">Jacob Clarkson</h3>
                             <p class="lead">CLRJAC004
                                 <br>jacobhclarkson@gmail.com
-                                <br>078 348 4450</p>
+                                <br>078 348 4450
+                                <br>Intergroup Competition</p>
                         </div>
                         <div class="col-md-4">
                             <h3 class="section-heading">Paul Wanjohi</h3>
                             <p class="lead">WNJPAU001
                                 <br>paul.mwanjohi@gmail.com
-                                <br>072 460 7568</p>
+                                <br>072 460 7568
+                                <br>Group Size</p>
                         </div>
                     </div>
                 </div>
