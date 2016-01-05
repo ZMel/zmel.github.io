@@ -7,21 +7,20 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body oncontextmenu="window.history.back(); return false;">
+<body oncontextmenu="return false;">
     <script src="sound.js"></script>
 
+    <script type="text/javascript">
+        playSound(this, 'voice/welcomeMessage.mp3');
+    </script>
 
-    <a href="Artists.html">
-        <div id="top" onmouseover="playSound(this, 'voice/Artists.mp3');">
-            <h1>Artists</h1>
+
+    <a href="index.html">
+        <div id="whole">
+            <h1>Main Page</h1>
         </div>
     </a>
-     <a href="Albums.html"><div id="middle" onmouseover="playSound(this, 'voice/Albums.mp3');">
-        <h1>Albums</h1>
-    </div>
-     <a href="Genres.html"><div id="bottom" onmouseover="playSound(this, 'voice/Genres.mp3');">
-        <h1>Genres</h1>
-    </div>
+
 
 </body>
 
