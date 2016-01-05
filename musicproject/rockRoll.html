@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body oncontextmenu="window.history.back(); return false;">
+    <script src="sound.js"></script>
+
+    <a onclick="playSound(this, 'songs/The Rolling Stones - Rip This Joint.mp3');" onmouseout="stopSound();">
+        <div id="whole" onmouseover="playSound(this, 'voice/Rip This Joint.mp3');" onmouseout="stopSound();">
+            <h1>Rip This Joint</h1>
+        </div>
+    </a>
+
+</body>
+
+</html>
